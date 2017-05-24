@@ -1,0 +1,25 @@
+// when you create a file that is only going to be imported
+// you start it with and underscore to show that it is a partial
+
+.top-bar, top-bar ul {
+  background-color: $nav-background;
+}
+
+.top-bar {
+  .menu-text {
+    color: $nav-color-text;
+  }
+
+  .menu > .menu-text > a {
+    display: inline;
+    padding: 0;
+  }
+
+  .active-link {
+    font-weight: bold;
+  }
+
+}
+
+
+
