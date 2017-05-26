@@ -8,7 +8,11 @@ module.exports = (config) => {
         frameworks: ['mocha'],
         // "globbing files" using wildcards so that
         // it will work on any files in the directory or subdirectories
-        files: ['app/tests/**/*.test.jsx'],
+        files: [
+            'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/foundation-sites/dist/foundation.min.js',
+            'app/tests/**/*.test.jsx'
+        ],
         preprocessors: {
             'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']
         },

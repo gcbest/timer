@@ -9,9 +9,7 @@ class Countdown extends React.Component {
         this.state = {
             count: 0,
             countdownStatus: 'stopped'
-
         };
-
         this.handleSetCountdown = this.handleSetCountdown.bind(this);
     }
     componentDidUpdate (prevProps, prevState) {
